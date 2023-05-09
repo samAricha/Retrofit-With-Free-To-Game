@@ -7,6 +7,4 @@ data class SpecificGameModel(
     val thumbnail: String,
     val title: String,
 
-
-
 )
