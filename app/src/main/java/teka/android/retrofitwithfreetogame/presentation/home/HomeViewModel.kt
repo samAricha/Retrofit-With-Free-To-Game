@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import teka.android.retrofitwithfreetogame.domain.GetGamesUseCase
-import teka.android.retrofitwithfreetogame.domain.item.GameItem
+import teka.android.retrofitwithfreetogame.domain.items.GameItem
 import javax.inject.Inject
 
 

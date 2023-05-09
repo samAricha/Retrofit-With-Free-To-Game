@@ -1,4 +1,4 @@
-package teka.android.retrofitwithfreetogame.domain.item
+package teka.android.retrofitwithfreetogame.domain.items
 
 import teka.android.retrofitwithfreetogame.data.remote.model.GameModel
 

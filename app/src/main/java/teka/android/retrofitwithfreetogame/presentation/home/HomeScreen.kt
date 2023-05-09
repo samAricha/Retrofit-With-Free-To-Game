@@ -17,7 +17,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.rememberImagePainter
-import teka.android.retrofitwithfreetogame.domain.item.GameItem
+import teka.android.retrofitwithfreetogame.domain.items.GameItem
 
 
 @Composable
