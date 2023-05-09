@@ -25,6 +25,7 @@ import teka.android.retrofitwithfreetogame.presentation.vm.GameViewModel
 @Composable
 fun DetailScreen(id: String, gameViewModel: GameViewModel, navController: NavController){
 
+    gameViewModel.getGameById(id.toInt())
     val game = gameViewModel.game.observeAsState().value
 
     LazyColumn{
@@ -36,7 +37,7 @@ fun DetailScreen(id: String, gameViewModel: GameViewModel, navController: NavCon
               TopAppBar (
                   navigationIcon = {
                                    
-                       IconButton(onClick = { /*TODO*/ }) {
+                       IconButton(onClick = { navController.popBackStack() }) {
                            Icon(imageVector = Icons.Filled.ArrowBack,
                                contentDescription = null)
                        }

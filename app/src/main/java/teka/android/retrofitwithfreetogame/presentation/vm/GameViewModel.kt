@@ -42,7 +42,7 @@ class GameViewModel @Inject constructor(
 
     }
 
-    private fun getGameById(id: Int) {
+    fun getGameById(id: Int) {
 
         viewModelScope.launch {
 

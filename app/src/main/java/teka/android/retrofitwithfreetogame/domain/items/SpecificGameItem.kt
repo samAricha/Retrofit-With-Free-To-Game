@@ -11,4 +11,4 @@ data class SpecificGameItem (
 
 )
 
-fun SpecificGameModel.toSpecificGameItem() = SpecificGameItem(id, description, thumbnail, title)
+fun SpecificGameModel.toSpecificGameItem() = SpecificGameItem(id, title, description, thumbnail)

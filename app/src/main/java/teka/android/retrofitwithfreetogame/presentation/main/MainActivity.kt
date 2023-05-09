@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
+import teka.android.retrofitwithfreetogame.navigation.SetupNavHost
 import teka.android.retrofitwithfreetogame.presentation.home.HomeScreen
 import teka.android.retrofitwithfreetogame.presentation.vm.GameViewModel
 import teka.android.retrofitwithfreetogame.ui.theme.RetrofitWithFreeToGameTheme
@@ -28,7 +29,8 @@ class MainActivity : ComponentActivity() {
 
                     val gameViewModel: GameViewModel = viewModel()
                     val navController = rememberNavController()
-                    HomeScreen(navController = navController, gameViewModel = gameViewModel)
+                    SetupNavHost(navController = navController, gameViewModel = gameViewModel)
+
 
                 }
             }

@@ -57,7 +57,7 @@ fun HomeScreen(
 
         LazyColumn {
 
-            items(games) { game: GameItem ->
+            items(games) { game ->
 
                 GameCard(game = game, navController = navController)
 
