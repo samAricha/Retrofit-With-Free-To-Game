@@ -7,8 +7,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
 import teka.android.retrofitwithfreetogame.presentation.home.HomeScreen
+import teka.android.retrofitwithfreetogame.presentation.vm.GameViewModel
 import teka.android.retrofitwithfreetogame.ui.theme.RetrofitWithFreeToGameTheme
 
 @AndroidEntryPoint
@@ -23,7 +26,9 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
 
-                    HomeScreen()
+                    val gameViewModel: GameViewModel = viewModel()
+                    val navController = rememberNavController()
+                    HomeScreen(navController = navController, gameViewModel = gameViewModel)
 
                 }
             }
